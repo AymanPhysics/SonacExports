@@ -1,0 +1,38 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:WpfApplication1.EmployeeTracker" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="LoadingSheet"
+    FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" TabIndex="0" IsManipulationEnabled="True" SnapsToDevicePixels="True" UseLayoutRounding="True" Margin="0,0,0,0" d:DesignWidth="824.207" d:DesignHeight="369.209">
+    <Grid Background="{DynamicResource Bg}" Margin="10,12,12,12">
+        <Grid Margin="12,12,12,14" x:Name="lblMSG" VerticalAlignment="Stretch" >
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#FF6DD9FF" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Button  Content="Print All"  Margin="613,0,15,5" x:Name="btnPrintAll" TabIndex="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="150" Background="{DynamicResource BgSave}" IsTabStop="False"/>
+            <Button  Content="Print"  Margin="457,0,171,5" x:Name="btnPrint" TabIndex="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="150" Background="{DynamicResource BgSave}" IsTabStop="False"/>
+            <Button  Content="Delete"  Margin="302,0,326,5" x:Name="btnDelete" TabIndex="12" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="150" Background="{DynamicResource BgDelete}" IsTabStop="False" Height="42"/>
+            <Button  Content="Refresh"  Margin="152,0,476,5" x:Name="btnRefresh" TabIndex="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="150" Background="{DynamicResource BgSave}" IsTabStop="False"/>
+            <Button  Content="Up"  Margin="8,0,703,5" x:Name="btnUp" TabIndex="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="67" Background="{DynamicResource BgSave}" IsTabStop="False"/>
+            <Button  Content="Down"  Margin="80,0,631,5" x:Name="btnDown" TabIndex="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="67" Background="{DynamicResource BgSave}" IsTabStop="False"/>
+        </Grid>
+
+        <!--<ScrollViewer Margin="0,77,0,0">-->
+
+        <ScrollViewer SelectiveScrollingGrid.SelectiveScrollingOrientation="Horizontal" Margin="20,20,20,67" VerticalScrollBarVisibility="Disabled">
+            <Grid Margin="0,0,0,0">
+                <WrapPanel x:Name="SC" Height="34" VerticalAlignment="Top" Margin="0,5,0,0" />
+                <DataGrid  x:Name="DataGridView1" Margin="0,39,0,0" CanUserSortColumns="True"   
+					CanUserResizeColumns="True" CanUserReorderColumns="False" 
+					CanUserDeleteRows="False" Foreground="Black" HorizontalScrollBarVisibility="Visible"
+                           VerticalScrollBarVisibility="Visible"
+					HorizontalGridLinesBrush="#FF1B78FF" AutoGenerateColumns="True" RowHeight="40" />
+            </Grid>
+        </ScrollViewer>
+
+        <!--</ScrollViewer>-->
+    </Grid>
+
+</UserControl>

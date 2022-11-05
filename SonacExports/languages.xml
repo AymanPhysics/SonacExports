@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <!--<language Name="عربى" Dic="Dic_Ar.xaml" Image="/OMEGA;component/Flags/Egypt.png" FlowDirection="1" Visibility="0"/>-->
+  <language Name="English" Dic="Dic_En.xaml" Image="/OMEGA;component/Flags/England.png" FlowDirection="0" Visibility="0"/>
+  <language Name="Français" Dic="Dic_Fr.xaml" Image="/OMEGA;component/Flags/France.png" FlowDirection="0" Visibility="2"/>
+  <language Name="Deutsch" Dic="Dic_Gr.xaml" Image="/OMEGA;component/Flags/Germany.png" FlowDirection="0" Visibility="2"/>
+  <language Name="Italiano" Dic="Dic_It.xaml" Image="/OMEGA;component/Flags/Italy.png" FlowDirection="0" Visibility="2"/>
+  <language Name="Türk" Dic="Dic_Tr.xaml" Image="/OMEGA;component/Flags/Turkey.png" FlowDirection="0" Visibility="2"/>
+  <language Name="中国" Dic="Dic_Ch.xaml" Image="/OMEGA;component/Flags/China.png" FlowDirection="0" Visibility="2"/>
+</languages>
+
